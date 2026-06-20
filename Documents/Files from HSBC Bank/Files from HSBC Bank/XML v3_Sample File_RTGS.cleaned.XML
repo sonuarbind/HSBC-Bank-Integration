@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<CstmrCdtTrfInitn>
+<GrpHdr>
+<MsgId>UNIQUEFile_Ref_031220-01</MsgId>
+<CreDtTm>2020-12-02T18:01:30</CreDtTm>
+<Authstn>
+<Cd>ILEV</Cd>
+</Authstn>
+<NbOfTxs>2</NbOfTxs>
+<CtrlSum>500000.00</CtrlSum>
+<InitgPty>
+<Nm>Debit Party Name</Nm>
+<Id>
+<OrgId>
+<Othr>
+<Id>ABCXXXXXX001</Id>
+</Othr>
+</OrgId>
+</Id>
+</InitgPty>
+</GrpHdr>
+<PmtInf>
+<PmtInfId>UNIQUEPMT_Ref_031220-01</PmtInfId>
+<PmtMtd>TRF</PmtMtd>
+<PmtTpInf>
+<SvcLvl>
+<Cd>URGP</Cd>
+</SvcLvl>
+</PmtTpInf>
+<ReqdExctnDt>2020-12-03</ReqdExctnDt>
+<Dbtr>
+<Nm>Debtor Party Name</Nm>
+<PstlAdr>
+<StrtNm>ABC</StrtNm>
+<PstCd>122002</PstCd>
+<TwnNm>Gurgaon</TwnNm>
+<Ctry>IN</Ctry>
+<AdrLine>ADDRESS Max Length 35</AdrLine>
+</PstlAdr>
+</Dbtr>
+<DbtrAcct>
+<Id>
+<Othr>
+<Id>019XXXXXX001</Id>
+</Othr>
+</Id>
+<Ccy>INR</Ccy>
+</DbtrAcct>
+<DbtrAgt>
+<FinInstnId>
+<BIC>HSBCINBB</BIC>
+<PstlAdr>
+<Ctry>IN</Ctry>
+</PstlAdr>
+</FinInstnId>
+</DbtrAgt>
+<CdtTrfTxInf>
+<PmtId>
+<InstrId>Unique Data 001</InstrId>
+<EndToEndId>Unique Data 001</EndToEndId>
+</PmtId>
+<Amt>
+<InstdAmt Ccy="INR">200000.00</InstdAmt>
+</Amt>
+<ChrgBr>DEBT</ChrgBr>
+<CdtrAgt>
+<FinInstnId>
+<ClrSysMmbId>
+<MmbId>HSBC01INDIA</MmbId>
+</ClrSysMmbId>
+<Nm>HSBC Bank</Nm>
+<PstlAdr>
+<Ctry>IN</Ctry>
+</PstlAdr>
+</FinInstnId>
+</CdtrAgt>
+<Cdtr>
+<Nm>Bene Name</Nm>
+<PstlAdr>
+<StrtNm>ABC</StrtNm>
+<PstCd>123456</PstCd>
+<TwnNm>XXXXXXX</TwnNm>
+<Ctry>IN</Ctry>
+<AdrLine>ADDRESS Max Length 35</AdrLine>
+</PstlAdr>
+</Cdtr>
+<CdtrAcct>
+<Id>
+<Othr>
+<Id>019XXXXXX001</Id>
+</Othr>
+</Id>
+</CdtrAcct>
+<RltdRmtInf>
+<RmtLctnMtd>EMAL</RmtLctnMtd>
+<RmtLctnElctrncAdr>abc@hsbc.co.in</RmtLctnElctrncAdr>
+</RltdRmtInf>
+<RmtInf>
+<Ustrd>Max 35 Characters</Ustrd>
+</RmtInf>
+</CdtTrfTxInf>
+<CdtTrfTxInf>
+<PmtId>
+<InstrId>Unique Data 002</InstrId>
+<EndToEndId>Unique Data 002</EndToEndId>
+</PmtId>
+<Amt>
+<InstdAmt Ccy="INR">300000.00</InstdAmt>
+</Amt>
+<ChrgBr>DEBT</ChrgBr>
+<CdtrAgt>
+<FinInstnId>
+<ClrSysMmbId>
+<MmbId>HSBC01INDIA</MmbId>
+</ClrSysMmbId>
+<Nm>HSBC Bank</Nm>
+<PstlAdr>
+<Ctry>IN</Ctry>
+</PstlAdr>
+</FinInstnId>
+</CdtrAgt>
+<Cdtr>
+<Nm>Bene Name</Nm>
+<PstlAdr>
+<StrtNm>ABC</StrtNm>
+<PstCd>123456</PstCd>
+<TwnNm>XXXXXXXXX</TwnNm>
+<Ctry>IN</Ctry>
+<AdrLine>ADDRESS Max Length 35</AdrLine>
+</PstlAdr>
+</Cdtr>
+<CdtrAcct>
+<Id>
+<Othr>
+<Id>019XXXXXX001</Id>
+</Othr>
+</Id>
+</CdtrAcct>
+<RltdRmtInf>
+<RmtLctnMtd>EMAL</RmtLctnMtd>
+<RmtLctnElctrncAdr>abc@hsbc.co.in</RmtLctnElctrncAdr>
+</RltdRmtInf>
+<RmtInf>
+<Ustrd>Max 35 Characters</Ustrd>
+</RmtInf>
+</CdtTrfTxInf>
+</PmtInf>
+</CstmrCdtTrfInitn>
+</Document>

@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <CstmrCdtTrfInitn>
+  <GrpHdr>
+   <MsgId>File_Reference_001</MsgId>
+   <CreDtTm>2022-10-12T18:41:56</CreDtTm>
+<Authstn><Cd>ILEV</Cd></Authstn>
+   <NbOfTxs>2</NbOfTxs>
+   <CtrlSum>2.00</CtrlSum>
+   <InitgPty>
+    <Nm>PCM Test Account</Nm>
+    <Id>
+     <OrgId>
+      <Othr><Id>ABCXXXX001</Id></Othr>
+     </OrgId>
+    </Id>
+   </InitgPty>
+  </GrpHdr>
+  <PmtInf>
+   <PmtInfId>Unique_Batch_Reference_001</PmtInfId>
+   <PmtMtd>TRF</PmtMtd>
+   <PmtTpInf>
+    <SvcLvl>
+     <Cd>URNS</Cd>
+    </SvcLvl>
+   </PmtTpInf><ReqdExctnDt>2022-10-14</ReqdExctnDt>
+   <Dbtr>
+    <Nm>Debtor Party Name</Nm>
+    <PstlAdr>
+     <StrtNm>7th Floor, Tower C, DLF Cyber Greens</StrtNm>
+     <PstCd>122002</PstCd>
+     <TwnNm>Gurgaon</TwnNm>
+     <Ctry>IN</Ctry>
+     <AdrLine>ADDRESS Max Length 35</AdrLine>
+    </PstlAdr>
+   </Dbtr>
+   <DbtrAcct>
+    <Id>
+     <Othr>
+      <Id>019XXXXXX002</Id>
+     </Othr>
+    </Id>
+    <Ccy>INR</Ccy>
+   </DbtrAcct>
+   <DbtrAgt>
+    <FinInstnId>
+     <BIC>HSBCINBB</BIC>
+     <PstlAdr>
+      <Ctry>IN</Ctry>
+     </PstlAdr>
+    </FinInstnId>
+   </DbtrAgt>
+   <CdtTrfTxInf>
+    <PmtId>
+     <InstrId>Unique Data 001</InstrId>
+     <EndToEndId>Unique Data 001</EndToEndId>
+    </PmtId>
+    <Amt>
+     <InstdAmt Ccy="INR">1.00</InstdAmt>
+    </Amt>
+    <ChrgBr>DEBT</ChrgBr>
+    <CdtrAgt>
+     <FinInstnId>
+      <ClrSysMmbId>
+       <MmbId>HSBC0110005</MmbId>
+      </ClrSysMmbId>
+      <Nm>Hongkong Shanghai Banking Corporation Limited</Nm>
+      <PstlAdr>
+       <Ctry>IN</Ctry>
+      </PstlAdr>
+     </FinInstnId>
+    </CdtrAgt>
+    <Cdtr>
+     <Nm>PCM TEST ACCT 1</Nm>
+     <PstlAdr>
+      <PstCd>500090</PstCd>
+      <TwnNm>RR district</TwnNm>
+      <CtrySubDvsn>01</CtrySubDvsn>
+      <Ctry>IN</Ctry>
+      <AdrLine>ADDRESS Max Length 35</AdrLine>
+     </PstlAdr>
+     </Cdtr>
+    <CdtrAcct>
+     <Id>
+      <Othr>
+       <Id>019XXXXXX001</Id>
+      </Othr>
+     </Id>
+    </CdtrAcct>
+    <RltdRmtInf>
+	<RmtLctnMtd>EMAL</RmtLctnMtd>
+	<RmtLctnElctrncAdr>abc@hsbc.co.in</RmtLctnElctrncAdr>
+	</RltdRmtInf>
+    <RmtInf>
+	<Ustrd>PYMT NARRATION</Ustrd>
+	<Strd>
+	<RfrdDocInf>
+	<Tp/>
+	<Nb>ABCD1234</Nb>
+	<RltdDt>2013-05-12</RltdDt>
+	</RfrdDocInf>
+	<RfrdDocAmt>
+	<DuePyblAmt Ccy="INR">100.00</DuePyblAmt>
+	</RfrdDocAmt><CdtrRefInf>
+	<Tp>
+	<CdOrPrtry>
+	<Prtry>/TDSA/1.00</Prtry>
+	</CdOrPrtry>
+	</Tp><Ref>/AMNT/99.00</Ref>
+	</CdtrRefInf>
+	<AddtlRmtInf>Payment Remarks</AddtlRmtInf>
+	</Strd>
+	</RmtInf>
+	</CdtTrfTxInf>
+  </PmtInf>
+    <PmtInf>
+   <PmtInfId>Unique_Batch_Reference_002</PmtInfId>
+   <PmtMtd>TRF</PmtMtd>
+   <PmtTpInf>
+    <SvcLvl>
+     <Cd>URNS</Cd>
+    </SvcLvl>
+   </PmtTpInf><ReqdExctnDt>2022-10-18</ReqdExctnDt>
+   <Dbtr>
+    <Nm>Debtor Party Name</Nm>
+    <PstlAdr>
+     <StrtNm>7th Floor, Tower C, DLF Cyber Greens</StrtNm>
+     <PstCd>122002</PstCd>
+     <TwnNm>Gurgaon</TwnNm>
+     <Ctry>IN</Ctry>
+     <AdrLine>ADDRESS Max Length 35</AdrLine>
+    </PstlAdr>
+   </Dbtr>
+   <DbtrAcct>
+    <Id>
+     <Othr>
+      <Id>019XXXXXX002</Id>
+     </Othr>
+    </Id>
+    <Ccy>INR</Ccy>
+   </DbtrAcct>
+   <DbtrAgt>
+    <FinInstnId>
+     <BIC>HSBCINBB</BIC>
+     <PstlAdr>
+      <Ctry>IN</Ctry>
+     </PstlAdr>
+    </FinInstnId>
+   </DbtrAgt>
+   <CdtTrfTxInf>
+    <PmtId>
+     <InstrId>Unique Data 002</InstrId>
+     <EndToEndId>Unique Data 002</EndToEndId>
+    </PmtId>
+    <Amt>
+     <InstdAmt Ccy="INR">1.00</InstdAmt>
+    </Amt>
+    <ChrgBr>DEBT</ChrgBr>
+    <CdtrAgt>
+     <FinInstnId>
+      <ClrSysMmbId>
+       <MmbId>HSBC0110005</MmbId>
+      </ClrSysMmbId>
+      <Nm>Hongkong Shanghai Banking Corporation Limited</Nm>
+      <PstlAdr>
+       <Ctry>IN</Ctry>
+      </PstlAdr>
+     </FinInstnId>
+    </CdtrAgt>
+    <Cdtr>
+     <Nm>PCM TEST ACCT 1</Nm>
+     <PstlAdr>
+      <PstCd>500090</PstCd>
+      <TwnNm>RR district</TwnNm>
+      <CtrySubDvsn>01</CtrySubDvsn>
+      <Ctry>IN</Ctry>
+      <AdrLine>ADDRESS Max Length 35</AdrLine>
+     </PstlAdr>
+     </Cdtr>
+    <CdtrAcct>
+     <Id>
+      <Othr>
+       <Id>019XXXXXX001</Id>
+      </Othr>
+     </Id>
+    </CdtrAcct>
+    <RltdRmtInf>
+	<RmtLctnMtd>EMAL</RmtLctnMtd>
+	<RmtLctnElctrncAdr>abc@hsbc.co.in</RmtLctnElctrncAdr>
+	</RltdRmtInf>
+    <RmtInf>
+	<Ustrd>PYMT NARRATION 2</Ustrd>
+	<Strd>
+	<RfrdDocInf>
+	<Tp/>
+	<Nb>ABCD1234</Nb>
+	<RltdDt>2013-05-12</RltdDt>
+	</RfrdDocInf>
+	<RfrdDocAmt>
+	<DuePyblAmt Ccy="INR">100.00</DuePyblAmt>
+	</RfrdDocAmt><CdtrRefInf>
+	<Tp>
+	<CdOrPrtry>
+	<Prtry>/TDSA/1.00</Prtry>
+	</CdOrPrtry>
+	</Tp>
+	<Ref>/AMNT/99.00</Ref>
+	</CdtrRefInf>
+	<AddtlRmtInf>Payment Remarks</AddtlRmtInf>
+	</Strd>
+	</RmtInf>
+	</CdtTrfTxInf>
+  </PmtInf>
+ </CstmrCdtTrfInitn>
+</Document>

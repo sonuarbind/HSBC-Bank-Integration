@@ -1,0 +1,122 @@
+:20:AID4110299270001
+:25:0546XXXXXX001
+:28C:10796/00001
+:34F:INR0,
+:13D:2302130348+0000
+:61:2302130213CR203018,69S100NONREF          //UTIBR52023021300
+/24700129101398                   
+:86:/24700129101398                                                  
+GH2200039642/////////////////////// /////////////////////////////
+/////////////////////////////////// /////////////////////////////
+ABC PRIVATE LIMITED 8312 2023/02/13 083951              
+UTIBR52023021300731457                                           
+:61:2302130213CR8239,10S100NONREF          //AXSC230440338653
+NEFT FROM XYZ MOTORS PRIVATE 
+:86:NEFT FROM XYZ MOTORS PRIVATE L                              
+UTIB NEFT                                                        
+2023/02/13 090145                                                
+:61:2302130213CR71433,12S100NONREF          //AXSC230440338648
+NEFT FROM XYZ MOTORS PRIVATE 
+:86:NEFT FROM XYZ MOTORS PRIVATE L                              
+UTIB NEFT                                                        
+2023/02/13 090145                                                
+:61:2302130213CR4258,52S100NONREF          //AXSC230440338656
+NEFT FROM ABC FOUR WHEELERS LLP 0
+:86:NEFT FROM ABC FOUR WHEELERS LLP 01                              
+UTIB NEFT                                                        
+2023/02/13 090145                                                
+:61:2302130213CR1165,40S100NONREF          //AXSC230440338667
+NEFT FROM ABC MOTOR GARAGE PRI
+:86:NEFT FROM ABC MOTOR GARAGE PRIV                              
+UTIB NEFT                                                        
+2023/02/13 090145                                                
+:61:2302130213CR40890,72S100NONREF          //AXSC230440338650
+NEFT FROM XYZ MOTORS PRIVATE 
+:86:NEFT FROM XYZ MOTORS PRIVATE L                              
+UTIB NEFT                                                        
+2023/02/13 090145                                                
+:61:2302130213CR1827,79S100NONREF          //AXSC230440338657
+NEFT FROM ABC MOTOR GARAGE PRI
+:86:NEFT FROM ABC MOTOR GARAGE PRIV                              
+UTIB NEFT                                                        
+2023/02/13 090145                                                
+:61:2302130213CR20060,30S100NONREF          //AXSC230440338651
+NEFT FROM A VEHICLES PRIVATE LIM
+:86:NEFT FROM A VEHICLES PRIVATE LIMI                              
+UTIB NEFT                                                        
+2023/02/13 090145                                                
+:61:2302130213CR1582,20S100NONREF          //AXSC230440338658
+NEFT FROM A VEHICLES PRIVATE LIM
+:86:NEFT FROM A VEHICLES PRIVATE LIMI                              
+UTIB NEFT                                                        
+2023/02/13 090145                                                
+:61:2302130213CR197508,92S100NONREF          //AXSC230440338660
+NEFT FROM ABC FOUR WHEELERS LLP 0
+:86:NEFT FROM ABC FOUR WHEELERS LLP 01                              
+UTIB NEFT                                                        
+2023/02/13 090145                                                
+:61:2302130213CR161466,52S100NONREF          //AXSC230440338661
+NEFT FROM ABC VEHICLES PRIVATE LIM
+:86:NEFT FROM ABC VEHICLES PRIVATE LIMI                              
+UTIB NEFT                                                        
+2023/02/13 090148                                                
+:61:2302130213CR9136,00S100NONREF          //AXSC230440338664
+NEFT FROM ABC VEHICLES PRIVATE LIM
+:86:NEFT FROM ABC VEHICLES PRIVATE LIMI                              
+UTIB NEFT                                                        
+2023/02/13 090148                                                
+:61:2302130213CR64304,20S100NONREF          //AXSC230440338662
+NEFT FROM ABC VEHICLES PRIVATE LIM
+:86:NEFT FROM ABC VEHICLES PRIVATE LIMI                              
+UTIB NEFT                                                        
+2023/02/13 090149                                                
+:61:2302130213CR19213,60S100NONREF          //AXSC230440338652
+NEFT FROM XYZ MOTOR GARAGE PRI
+:86:NEFT FROM XYZ MOTOR GARAGE PRIV                              
+UTIB NEFT                                                        
+2023/02/13 090149                                                
+:61:2302130213CR847,89S100NONREF          //AXSC230440338659
+NEFT FROM ABC FOUR WHEELERS LLP 0
+:86:NEFT FROM ABC FOUR WHEELERS LLP 01                              
+UTIB NEFT                                                        
+2023/02/13 090149                                                
+:61:2302130213CR69219,83S100NONREF          //AXSC230440338649
+NEFT FROM XYZ MOTOR GARAGE PRI
+:86:NEFT FROM XYZ MOTOR GARAGE PRIV                              
+UTIB NEFT                                                        
+2023/02/13 090149                                                
+:61:2302130213CR3489,68S100NONREF          //AXSC230440338665
+NEFT FROM ABC VEHICLES PRIVATE LIM
+:86:NEFT FROM ABC VEHICLES PRIVATE LIMI                              
+UTIB NEFT                                                        
+2023/02/13 090149                                                
+:61:2302130213CR198988,10S100NONREF          //AXSC230440338647
+NEFT FROM ABC MOTOR GARAGE PRI
+:86:NEFT FROM ABC MOTOR GARAGE PRIV                              
+UTIB NEFT                                                        
+2023/02/13 090149                                                
+:61:2302130213CR8121,33S100NONREF          //AXSC230440338654
+NEFT FROM ABC MOTOR GARAGE PRI
+:86:NEFT FROM ABC MOTOR GARAGE PRIV                              
+UTIB NEFT                                                        
+2023/02/13 090149                                                
+:61:2302130213CR5825,36S100NONREF          //AXSC230440338655
+NEFT FROM XYZ VEHICLES PRIVATE LIM
+:86:NEFT FROM XYZ VEHICLES PRIVATE LIMI                              
+UTIB NEFT                                                        
+2023/02/13 090149                                                
+:61:2302130213CR2248,31S100NONREF          //AXSC230440338666
+NEFT FROM ABC VEHICLES PRIVATE LIM
+:86:NEFT FROM ABC VEHICLES PRIVATE LIMI                              
+UTIB NEFT                                                        
+2023/02/13 090149                                                
+:61:2302130213CR20543,43S100NONREF          //AXSC230440338663
+NEFT FROM ABC MOTOR GARAGE PRI
+:86:NEFT FROM ABC MOTOR GARAGE PRIV                              
+UTIB NEFT                                                        
+2023/02/13 090149                                                
+:90D:0INR0,00
+:90C:22INR1113389,01
+:86:/OSDR/HSBCINBB   
+BAL PLGC183111255,94/CLGC215074644,95/CAVC215074644,95
+-
