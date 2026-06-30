@@ -18,7 +18,10 @@ page 50001 "HSBC Payment Staging History"
                 {
                     ToolTip = 'Specifies the value of the History Entry No. field.', Comment = '%';
                 }
-
+                field("Payment Send to Bank"; Rec."Payment Send to Bank")
+                {
+                    ToolTip = 'Specifies the value of the Payment Send to Bank field.', Comment = '%';
+                }
                 field("Payment Push Bank"; Rec."Payment Push Bank")
                 {
                     ToolTip = 'Specifies the value of the Payment Push Bank field.', Comment = '%';
@@ -71,6 +74,10 @@ page 50001 "HSBC Payment Staging History"
                 {
                     ToolTip = 'Specifies the value of the IFSC Code field.', Comment = '%';
                 }
+                field("UETR No."; Rec."UETR No.")
+                {
+                    ToolTip = 'Specifies the value of the UETR No. field.', Comment = '%';
+                }
                 field("Country/Region Code"; Rec."Country/Region Code")
                 {
                     ToolTip = 'Specifies the value of the Country/Region Code field.', Comment = '%';
@@ -99,17 +106,13 @@ page 50001 "HSBC Payment Staging History"
                 {
                     ToolTip = 'Specifies the value of the Status Reason field.', Comment = '%';
                 }
-                field("HSBC Payment"; Rec."HSBC Payment")
-                {
-                    ToolTip = 'Specifies the value of the HSBC Payment field.', Comment = '%';
-                }
                 field("File Name"; Rec."File Name")
                 {
                     ToolTip = 'Specifies the value of the File Name field.', Comment = '%';
                 }
-                field("ACK Received"; Rec."ACK Received")
+                field("ACK1 File Imported"; Rec."ACK1 File Imported")
                 {
-                    ToolTip = 'Specifies the value of the ACK Received field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the ACK1 File Imported field.', Comment = '%';
                 }
                 field(Posted; Rec.Posted)
                 {

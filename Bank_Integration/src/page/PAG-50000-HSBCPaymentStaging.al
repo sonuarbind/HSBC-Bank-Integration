@@ -12,9 +12,17 @@ page 50000 "HSBC Payment Staging"
         {
             repeater(General)
             {
+                field("Payment Send to Bank"; Rec."Payment Send to Bank")
+                {
+                    ToolTip = 'Specifies the value of the Payment Send to Bank field.', Comment = '%';
+                }
                 field("Payment Push Bank"; Rec."Payment Push Bank")
                 {
                     ToolTip = 'Specifies the value of the Payment Push Bank field.', Comment = '%';
+                }
+                field("ACK1 File Imported"; Rec."ACK1 File Imported")
+                {
+                    ToolTip = 'Specifies the value of the ACK1 File Imported field.', Comment = '%';
                 }
                 field("Payment Received At Bank"; Rec."Payment Received At Bank")
                 {
@@ -64,6 +72,10 @@ page 50000 "HSBC Payment Staging"
                 {
                     ToolTip = 'Specifies the value of the IFSC Code field.', Comment = '%';
                 }
+                field("UETR No."; Rec."UETR No.")
+                {
+                    ToolTip = 'Specifies the value of the UETR No. field.', Comment = '%';
+                }
                 field("Country/Region Code"; Rec."Country/Region Code")
                 {
                     ToolTip = 'Specifies the value of the Country/Region Code field.', Comment = '%';
@@ -72,13 +84,13 @@ page 50000 "HSBC Payment Staging"
                 {
                     ToolTip = 'Specifies the value of the Payment Reference field.', Comment = '%';
                 }
-                field("End To End ID"; Rec."End To End ID")
-                {
-                    ToolTip = 'Specifies the value of the End To End ID field.', Comment = '%';
-                }
                 field("Message ID"; Rec."Message ID")
                 {
                     ToolTip = 'Specifies the value of the Message ID field.', Comment = '%';
+                }
+                field("End To End ID"; Rec."End To End ID")
+                {
+                    ToolTip = 'Specifies the value of the End To End ID field.', Comment = '%';
                 }
                 field("Execution Date"; Rec."Execution Date")
                 {
@@ -92,17 +104,9 @@ page 50000 "HSBC Payment Staging"
                 {
                     ToolTip = 'Specifies the value of the Status Reason field.', Comment = '%';
                 }
-                field("HSBC Payment"; Rec."HSBC Payment")
-                {
-                    ToolTip = 'Specifies the value of the HSBC Payment field.', Comment = '%';
-                }
                 field("File Name"; Rec."File Name")
                 {
                     ToolTip = 'Specifies the value of the File Name field.', Comment = '%';
-                }
-                field("ACK Received"; Rec."ACK Received")
-                {
-                    ToolTip = 'Specifies the value of the ACK Received field.', Comment = '%';
                 }
                 field(Posted; Rec.Posted)
                 {
@@ -276,7 +280,7 @@ page 50000 "HSBC Payment Staging"
 
             action(ImportACK)
             {
-                Caption = 'Import ACK';
+                Caption = 'Import ACK 1';
                 ApplicationArea = All;
                 Promoted = true;
                 PromotedCategory = Process;
@@ -286,7 +290,22 @@ page 50000 "HSBC Payment Staging"
                 var
                     AckProcessor: Codeunit "HSBC ACK Processor";
                 begin
-                    AckProcessor.ImportACK();
+                    AckProcessor.ImportACK1();
+                end;
+            }
+            action(ImportACK2)
+            {
+                Caption = 'Import ACK 2';
+                ApplicationArea = All;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedOnly = true;
+                Image = Import;
+                trigger OnAction()
+                var
+                    AckProcessor: Codeunit "HSBC ACK 2 Processor";
+                begin
+                    AckProcessor.ImportACK2();
                 end;
             }
         }

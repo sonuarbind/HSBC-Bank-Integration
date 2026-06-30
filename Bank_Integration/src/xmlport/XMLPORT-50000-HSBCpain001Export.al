@@ -53,13 +53,26 @@ xmlport 50000 "HSBC pain001 Export"
                             NbOfTxs := Format(TransactionCount);
                         end;
                     }
-                    // textelement(CtrlSum)
-                    // {
-                    //     trigger OnBeforePassVariable()
-                    //     begin
-                    //         CtrlSum := Format(TotalAmount);
-                    //     end;
-                    // }
+                    textelement(CtrlSum)
+                    {
+                        trigger OnBeforePassVariable()
+                        var
+                            AmountText: Text;
+                            DotPos: Integer;
+                        begin
+                            AmountText := Format(Round(TotalAmount, 0.01));
+
+                            DotPos := StrPos(AmountText, '.');
+
+                            if DotPos = 0 then
+                                AmountText += '.00'
+                            else
+                                if StrLen(CopyStr(AmountText, DotPos + 1)) = 1 then
+                                    AmountText += '0';
+
+                            CtrlSum := AmountText;
+                        end;
+                    }
 
                     textelement(InitgPty)
                     {
@@ -308,10 +321,6 @@ xmlport 50000 "HSBC pain001 Export"
                     {
                         XmlName = 'CdtTrfTxInf';
 
-                        // SourceTableView =
-                        //     sorting("Entry No.")
-                        //     where("Payment Push Bank" = const(false));
-
                         textelement(PmtId)
                         {
                             textelement(InstrId)
@@ -357,9 +366,19 @@ xmlport 50000 "HSBC pain001 Export"
                                 }
 
                                 trigger OnBeforePassVariable()
+                                var
+                                    AmountText: Text;
                                 begin
-                                    InstdAmt := Format(Payment.Amount);
+                                    AmountText := Format(Round(Payment.Amount, 0.01));
+                                    if StrPos(AmountText, '.') = 0 then
+                                        AmountText += '.00'
+                                    else
+                                        if StrLen(CopyStr(AmountText, StrPos(AmountText, '.') + 1)) = 1 then
+                                            AmountText += '0';
+
+                                    InstdAmt := AmountText;
                                 end;
+
                             }
                         }
 
@@ -512,6 +531,8 @@ xmlport 50000 "HSBC pain001 Export"
                             }
                         }
                         trigger OnAfterGetRecord()
+                        var
+                            HSBCLogEntriesCU: Codeunit "HSBC Log Entries";
                         begin
                             TransactionNo += 1;
 
@@ -523,10 +544,12 @@ xmlport 50000 "HSBC pain001 Export"
                             // Payment."Payment File No." := PaymentFileNo;
 
                             Payment."Payment Push Bank" := true;
-                            Payment."HSBC Payment" := true;
+                            Payment."Payment Send to Bank" := true;
                             Payment."Export Date Time" := CurrentDateTime;
-
                             Payment.Modify();
+
+                            // Create Export Log
+                            HSBCLogEntriesCU.InsertHSBCLog(Payment, Enum::"HSBC Log Type"::Export, '', '');
                         end;
                     }
                 }
@@ -558,37 +581,6 @@ xmlport 50000 "HSBC pain001 Export"
         // GlobalMessageID := PaymentFileNo;
 
         CreationDateTimeTxt := Format(CurrentDateTime, 0, '<Year4>-<Month,2>-<Day,2>T<Hours24,2>:<Minutes,2>:<Seconds,2>');
-
-        // TransactionNo := 0;
-        // TransactionCount := 0;
-        // TotalAmount := 0;
-
-        // HSBCPaymentStagingRec.Reset();
-        // // HSBCPaymentStagingRec.SetRange("Payment Push Bank", false);
-
-        // if not HSBCPaymentStagingRec.FindFirst() then
-        //     Error('No pending HSBC payment records available for export.');
-
-        // TransactionCount := HSBCPaymentStagingRec.Count;
-
-        // if HSBCPaymentStagingRec.FindSet() then
-        //     repeat
-        //         TotalAmount += HSBCPaymentStagingRec.Amount;
-        //     until HSBCPaymentStagingRec.Next() = 0;
-
-        // IMPORTANT:
-        // Payment tableelement already contains only selected records
-        // Payment.Reset();
-
-        // if not Payment.FindFirst() then
-        //     Error('No pending HSBC payment records available for export.');
-
-        // TransactionCount := Payment.Count;
-
-        // if Payment.FindSet() then
-        //     repeat
-        //         TotalAmount += Payment.Amount;
-        //     until Payment.Next() = 0;
 
 
         TransactionCount := 0;

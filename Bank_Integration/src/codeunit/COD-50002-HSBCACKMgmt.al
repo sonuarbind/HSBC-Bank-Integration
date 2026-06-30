@@ -34,7 +34,7 @@ codeunit 50002 "Update Payment Status"
                         PaymentStaging."Payment Status" := PaymentStaging."Payment Status"::PDNG;
                 end;
 
-                PaymentStaging."ACK Received" := true;
+                PaymentStaging."ACK1 File Imported" := true;
                 PaymentStaging."ACK Date Time" := CurrentDateTime;
                 PaymentStaging."Status Reason" := AckLog."Status Reason";
 

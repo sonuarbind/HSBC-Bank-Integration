@@ -68,7 +68,7 @@ codeunit 50000 "Payment Voucher Subscriber"
             HSBCPaymentStaging."Payment Reference" := GenJournalLine."Document No.";
 
         // HSBCPaymentStaging."End To End ID" := CopyStr('E' + GenJournalLine."Document No.", 1, 50);
-        HSBCPaymentStaging."Execution Date" := Today;
+        HSBCPaymentStaging."Execution Date" := Format(Today, 0, '<Year4>-<Month,2>-<Day,2>');
         HSBCPaymentStaging."Debtor Name" := BankAccount.Name;
         HSBCPaymentStaging."Debtor Account No." := BankAccount."Bank Account No.";
         HSBCPaymentStaging."Debtor BIC" := BankAccount."HSBC BIC Code";
@@ -80,7 +80,7 @@ codeunit 50000 "Payment Voucher Subscriber"
         HSBCPaymentStaging."Charge Bearer" := 'SHAR';
         HSBCPaymentStaging."Payment Status" := HSBCPaymentStaging."Payment Status"::Open;
         HSBCPaymentStaging."Status Reason" := '';
-        HSBCPaymentStaging."HSBC Payment" := true;
+        HSBCPaymentStaging."Payment Send to Bank" := true;
 
         HSBCPaymentStaging.Insert(true);
     end;

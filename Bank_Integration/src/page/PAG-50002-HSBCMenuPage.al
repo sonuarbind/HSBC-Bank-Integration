@@ -68,6 +68,15 @@ page 50002 "HSBC Bank Integration Menu"
                                             Page.Run(Page::"HSBC Payment Staging History");
                                         end;
                                     }
+                                    field(HSBCPaymentLog; HSBCPaymentLog)
+                                    {
+                                        ShowCaption = false;
+                                        Editable = false;
+                                        trigger OnDrillDown()
+                                        begin
+                                            Page.Run(Page::"HSBC Payment Log Page");
+                                        end;
+                                    }
                                 }
                             }
                         }
@@ -79,4 +88,5 @@ page 50002 "HSBC Bank Integration Menu"
     var
         HSBCPaymentStaging: Label 'HSBC Payment Staging';
         HSBCPaymentStagingHistory: Label 'HSBC Payment Staging History';
+        HSBCPaymentLog: Label 'HSBC Payment Log Page';
 }

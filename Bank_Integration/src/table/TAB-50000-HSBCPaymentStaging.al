@@ -52,7 +52,7 @@ table 50000 "HSBC Payment Staging"
         {
             DataClassification = ToBeClassified;
         }
-        field(13; "Execution Date"; Date)
+        field(13; "Execution Date"; Text[10])
         {
             DataClassification = ToBeClassified;
         }
@@ -64,7 +64,7 @@ table 50000 "HSBC Payment Staging"
         {
             DataClassification = ToBeClassified;
         }
-        field(16; "HSBC Payment"; Boolean)
+        field(16; "Payment Send to Bank"; Boolean)
         {
             DataClassification = ToBeClassified;
         }
@@ -76,9 +76,10 @@ table 50000 "HSBC Payment Staging"
         {
             DataClassification = ToBeClassified;
         }
-        field(19; "ACK Received"; Boolean)
+        field(19; "ACK1 File Imported"; Boolean)
         {
-            DataClassification = ToBeClassified;
+            Caption = 'ACK1 File Imported';
+            DataClassification = CustomerContent;
         }
         field(20; "Posted"; Boolean)
         {
@@ -88,42 +89,34 @@ table 50000 "HSBC Payment Staging"
         {
             DataClassification = CustomerContent;
         }
-
         field(22; "Debtor Account No."; Code[50])
         {
             DataClassification = CustomerContent;
         }
-
-        field(23; "Debtor BIC"; Code[20])
+        field(23; "Debtor BIC"; Code[20])     //17146
         {
             DataClassification = CustomerContent;
         }
-
         field(24; "Payment Type"; Code[20])
         {
             DataClassification = CustomerContent;
         }
-
         field(25; "Charge Bearer"; Code[10])
         {
             DataClassification = CustomerContent;
         }
-
         field(26; "Remittance Email"; Text[100])
         {
             DataClassification = CustomerContent;
         }
-
         field(27; "Remittance ID"; Text[100])
         {
             DataClassification = CustomerContent;
         }
-
         field(28; "Export Date Time"; DateTime)
         {
             DataClassification = CustomerContent;
         }
-
         field(29; "ACK Date Time"; DateTime)
         {
             DataClassification = CustomerContent;
@@ -143,52 +136,52 @@ table 50000 "HSBC Payment Staging"
 
         field(33; "Debtor Country"; Code[10])
         {
+            DataClassification = CustomerContent;
         }
-
         field(34; "Debtor Address 1"; Text[100])
         {
+            DataClassification = CustomerContent;
         }
-
         field(35; "Debtor Address 2"; Text[100])
         {
+            DataClassification = CustomerContent;
         }
-
         field(36; "Creditor Country"; Code[10])
         {
+            DataClassification = CustomerContent;
         }
-
         field(37; "Creditor Address 1"; Text[100])
         {
+            DataClassification = CustomerContent;
         }
-
         field(38; "Creditor Address 2"; Text[100])
         {
+            DataClassification = CustomerContent;
         }
-
         field(39; "Creditor Address 3"; Text[100])
         {
+            DataClassification = CustomerContent;
         }
-
         field(40; "Remittance Method"; Code[10])
         {
+            DataClassification = CustomerContent;
         }
-
         field(41; "Bank Country"; Code[10])
         {
+            DataClassification = CustomerContent;
         }
-
         field(42; "Local Instrument"; Code[20])
         {
+            DataClassification = CustomerContent;
         }
-
         field(43; "Category Purpose"; Code[20])
         {
+            DataClassification = CustomerContent;
         }
         field(44; "Bank Address 1"; Text[100])
         {
             DataClassification = CustomerContent;
         }
-
         field(45; "Bank Address 2"; Text[100])
         {
             DataClassification = CustomerContent;
@@ -217,14 +210,53 @@ table 50000 "HSBC Payment Staging"
         {
             DataClassification = ToBeClassified;
         }
-        field(53; "ACK BIC Code"; Code[20])
+        field(53; "Ack1 Message ID"; Code[50])
         {
-            DataClassification = ToBeClassified;
+            Caption = 'Message ID';
+            DataClassification = CustomerContent;
         }
-        field(54; "ACK Organisation ID"; Code[50])
+        field(54; "Ack1 Creation Date Time"; DateTime)
         {
-            DataClassification = ToBeClassified;
+            Caption = 'Creation Date Time';
+            DataClassification = CustomerContent;
         }
+        field(55; "Ack1 Organisation BIC/BEI"; Code[20])
+        {
+            Caption = 'Organisation BIC/BEI';
+            DataClassification = CustomerContent;
+        }
+        field(56; "Ack1 Organisation ID"; Code[50])
+        {
+            Caption = 'Organisation ID';
+            DataClassification = CustomerContent;
+        }
+        field(57; "Ack2 Message ID"; Code[50])
+        {
+            Caption = 'Message ID';
+            DataClassification = CustomerContent;
+        }
+        field(58; "Ack2 Creation Date Time"; DateTime)
+        {
+            Caption = 'Creation Date Time';
+            DataClassification = CustomerContent;
+        }
+        field(59; "Ack2 Organisation BIC/BEI"; Code[20])
+        {
+            Caption = 'Organisation BIC/BEI';
+            DataClassification = CustomerContent;
+        }
+        field(60; "Ack2 Organisation ID"; Code[50])
+        {
+            Caption = 'Organisation ID';
+            DataClassification = CustomerContent;
+        }
+        field(61; "UETR No."; Text[100])
+        {
+            Caption = 'UETR No.';
+            DataClassification = CustomerContent;
+        }
+
+
     }
 
     keys

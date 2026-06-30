@@ -1,11 +1,11 @@
 codeunit 50004 "HSBC ACK Processor"
 {
-    procedure ImportACK()
+    procedure ImportACK1()
     var
         FileName: Text;
         InS: InStream;
     begin
-        if not UploadIntoStream('Select HSBC ACK File', '', 'XML Files (*.xml)|*.xml', FileName, InS) then
+        if not UploadIntoStream('Select HSBC ACK 1 File', '', 'XML Files (*.xml)|*.xml', FileName, InS) then
             exit;
 
         XmlPort.Import(XmlPort::"HSBC pain002 Import", InS);
