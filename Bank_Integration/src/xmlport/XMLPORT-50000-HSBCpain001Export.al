@@ -547,9 +547,6 @@ xmlport 50000 "HSBC pain001 Export"
                             Payment."Payment Send to Bank" := true;
                             Payment."Export Date Time" := CurrentDateTime;
                             Payment.Modify();
-
-                            // Create Export Log
-                            HSBCLogEntriesCU.InsertHSBCLog(Payment, Enum::"HSBC Log Type"::Export, '', '');
                         end;
                     }
                 }

@@ -1,4 +1,4 @@
-codeunit 50005 "HSBC ACK 2 Processor"
+codeunit 50004 "HSBC ACK 2 Processor"
 {
     procedure ImportACK2()
     var

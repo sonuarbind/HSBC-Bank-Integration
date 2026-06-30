@@ -13,6 +13,8 @@ codeunit 50001 "HSBC Payment Mgmt"
 
         PaymentFileNo: Code[30];
         LineNo: Integer;
+
+        HSBCLogEntriesCU: Codeunit "HSBC Log Entries";
     begin
         GLSetup.Get();
         GLSetup.TestField("HSBC Payment File Nos.");
@@ -71,6 +73,8 @@ codeunit 50001 "HSBC Payment Mgmt"
 
                 PaymentRec.Modify(true);
 
+                // Create Export Log
+                HSBCLogEntriesCU.InsertHSBCLog(PaymentRec, Enum::"HSBC Log Type"::Export, '', '');
             until PaymentRec.Next() = 0;
 
         Message('HSBC Payment XML generated successfully. File No. %1', PaymentFileNo);
